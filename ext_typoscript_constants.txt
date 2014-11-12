@@ -1,0 +1,72 @@
+// cat=plugin.gsttopcontent//; type=file; label=Template file: Location and filename, if a HTML template file should be used. If empty the default template will be used.
+plugin.gsttopcontent.templateFile = 
+
+// cat=plugin.gsttopcontent//; type=int+; label=Start PID: PID from where the plugin starts to lookup pages recursively. If this parameter is empty, the pid where the plugin is located will be chosen.
+plugin.gsttopcontent.startPid = 
+
+// cat=plugin.gsttopcontent//; type=string; label=Exclude PID list: List of PIDs which are excluded from the plugin (comma-seperated).
+plugin.gsttopcontent.excludePids = 
+
+// cat=plugin.gsttopcontent//; type=string; label=Exclude PID list (recursive): List of PIDs which are recursively (!) excluded from the plugin (comma-seperated).
+plugin.gsttopcontent.excludePidsR = 
+
+// cat=plugin.gsttopcontent//; type=int[0-200]; label=Maximum records: This is the maximum amount of records to be displayed (max.: 200).
+plugin.gsttopcontent.maxRecs = 5
+
+// cat=plugin.gsttopcontent//; type=int[0-200]; label=Split result blocks: This is the amount of records to be displayed as one result block (one result screen page) (max.: 200).
+plugin.gsttopcontent.ppRecs = 
+
+// cat=plugin.gsttopcontent//; type=int[0-200]; label=Records offset: Will be added to the SQL LIMIT clause (max.: 200).
+plugin.gsttopcontent.offsetRecs = 0
+
+// cat=plugin.gsttopcontent//; type=string; label=Allowed 'doktype's: List of 'doktype's (integers) which are included to lookup the pages (comma-seperated).
+plugin.gsttopcontent.allowedDokTypes = 1,2,3,4,5,6
+
+// cat=plugin.gsttopcontent//; type=int[0-500]; label=Maximum text length: This is the maximum amount of characters from the 'bodytext'-field to be displayed (max.: 500).
+plugin.gsttopcontent.maxTextLength = 150
+
+// cat=plugin.gsttopcontent//; type=string; label=Goto last character: In addition to "maximum text length" the text finally ends when this character was found.
+plugin.gsttopcontent.andGotoNext = " "
+
+// cat=plugin.gsttopcontent//; type=string; label=Text end string: This string is appended to the 'bodytext'-part after beeing truncated to 'maxTextLength' characters.
+plugin.gsttopcontent.showTextEnd = ...
+
+// cat=plugin.gsttopcontent//; type=file; label=Link icon file: This is the link (including path) to the linking icon (default: gsttopcontent_defaultlink_icon.gif).
+plugin.gsttopcontent.showRecImg = gsttopcontent_defaultlink_icon.gif
+
+// cat=plugin.gsttopcontent//; type=string; label=Add to image tag: Those parameters will be added to the <IMG>-tag of the link icon.
+plugin.gsttopcontent.imgTagAdd = border="0" align="absmiddle" alt=""
+
+// cat=plugin.gsttopcontent//; type=int[0-1]; label=Link to page: If this option is set (1), the pagetitle will be shown as a link to the appropriate page.
+plugin.gsttopcontent.linkPageTitle = 0
+
+// cat=plugin.gsttopcontent//; type=string; label=Link target: The target of the implemented link.
+plugin.gsttopcontent.linkTarget = 
+
+// cat=plugin.gsttopcontent//; type=string; label=Additional a-tag parameters: Those parameters will be added to the <A>-tag of the link.
+plugin.gsttopcontent.ATagParams = 
+
+// cat=plugin.gsttopcontent//; type=int[0-1]; label=Teaser fields definition: If this option is set (1) and the teaser field is not the bodytext field, the field bodytext will be used if the teaser field is empty. 
+plugin.gsttopcontent.useTeaserAndBodytext = 1
+
+// cat=plugin.gsttopcontent//; type=int[0-1]; label=One result per page: If this option is set (1), only one content result per page will be recognized according to the SQL query (=first content result of each page).
+plugin.gsttopcontent.onlyOnePerPage = 0
+
+// cat=plugin.gsttopcontent//; type=string; label=Order By Clause: By ordering the records one can choose, which will be the top records. The default is 'tstamp DESC', which will return the newest content elements. Important note: Don't add "order by". Only the fieldname and the sortorder are requiered!
+plugin.gsttopcontent.sqlOrderBy = tstamp DESC
+
+// cat=plugin.gsttopcontent//; type=string; label=Timestamp field: This is the field to display the records timestamp. The default ist 'tstamp'. Important note: Do only use integer fields. Value will be passed through 'strftime()'.
+plugin.gsttopcontent.sqlTstampField = tt_content.tstamp
+
+// cat=plugin.gsttopcontent//; type=string; label=Teaser field: This is the field to display the teaser text. The default ist 'bodytext'. The plugins abstract field is named: tt_content.tx_gsttopcontent_abstract.
+plugin.gsttopcontent.sqlTeaserField = tt_content.bodytext
+
+// cat=plugin.gsttopcontent//; type=string; label=Additional where clause parameter(s): The where clause can be extended with this parameter. Important note: Do prepend "AND"; then name the field(s) and comparison(s)! Example: "AND field1 = comp1 AND field2 = comp2". 
+plugin.gsttopcontent.sqlAndWhere =
+
+plugin.gsttopcontent.classTable = 
+plugin.gsttopcontent.classTdTstamp = 
+plugin.gsttopcontent.classTdHeader = 
+plugin.gsttopcontent.classTdLink = 
+plugin.gsttopcontent.classTdBodytext = 
+plugin.gsttopcontent.classTdBrowse = 

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Top Content</title>
+</head>
+
+<body>
+
+<h3>###TABLE_ITEM###</h3>
+<p>Contains the marker:</p>
+<p>###CLASSTABLE###: Name of the CSS-class for the table. Comes from the CONSTANTS section of the Typo3-template (classTable).</p>
+
+<h3>###CONTENT_ITEM###</h3>
+<p>Contains the markers:</p>
+<p>###CLASSTABLE###: Name of the CSS-class for the table. Comes from the CONSTANTS section of the Typo3-template (classTable).</p>
+
+<h3>###TABLE_ITEM###</h3>
+<p>Contains the marker:</p>
+<p>###CLASSTDTSTAMP###: Name of the CSS-class for the <td>-tag of the date display. Comes from the CONSTANTS section of the Typo3-template (classTdTstamp).</p>
+<p>###CLASSTDLINK###: Name of the CSS-class for the <td>-tag of the link display. Comes from the CONSTANTS section of the Typo3-template (classTdLink).</p>
+<p>###CLASSTDHEADER###: Name of the CSS-class for the <td>-tag of the header display. Comes from the CONSTANTS section of the Typo3-template (classTdHeader).</p>
+<p>###CLASSTDBODYTEXT###: Name of the CSS-class for the <td>-tag of the bodytext display. Comes from the CONSTANTS section of the Typo3-template (classTdBodytext).</p>
+<br>
+<p>###TSTAMP###: Date value to display.
+<p>###LINK###: Link value to display.
+<p>###PAGETITLE###: Pagetitle value to display.
+<p>###HEADER###: Header value to display.
+<p>###BODYTEXT###: Bodytext value to display.
+
+<h3>###TABLE_ITEM###</h3>
+<p>Contains the marker:</p>
+<p>###CLASSTDBROWSE###: Name of the CSS-class <td>-tag of the browse display. Comes from the CONSTANTS section of the Typo3-template (classTdBrowse).</p>
+<p>###BROWSEFROMTO###: Displays the result count (e.g. 'm results out of n').
+<p>###BROWSELINKS###: Displays the links to the result pages (e.g. Page 1-Page 2-Page 3).
+
+
+
+<!-- ###TOPCONTENT_TABLE### -->
+
+	<!-- ###TABLE### -->
+	<!-- ###TABLE_ITEM### -->
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" class="###CLASSTABLE###">
+	<!-- ###TABLE_ITEM### -->
+	<!-- ###TABLE### -->
+
+		<!-- ###CONTENT### -->
+		
+		<!-- ###CONTENT_ITEM### -->
+		<tr><td colspan="2" class="###CLASSTDTSTAMP###">###TSTAMP###</td></tr>
+
+		<tr><td class="###CLASSTDHEADER###">###PAGETITLE###: ###HEADER###</td><td align="right" class="###CLASSTDLINK###">###LINK###</td></tr>
+
+		<tr><td colspan="2" class="###CLASSTDBODYTEXT###">###BODYTEXT###</td></tr>
+		<!-- ###CONTENT_ITEM### -->
+
+		<!-- ###BROWSE_ITEM### -->
+		<tr><td colspan="2" class="###CLASSTDBROWSE###">###BROWSEFROMTO###<br>###BROWSELINKS###</td></tr>
+		<!-- ###BROWSE_ITEM### -->
+
+		<!-- ###CONTENT### -->
+
+	</table>
+<!-- ###TOPCONTENT_TABLE### -->
+
+		
+
+</body>
+</html>

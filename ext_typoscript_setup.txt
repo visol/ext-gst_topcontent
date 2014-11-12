@@ -1,0 +1,64 @@
+plugin.tx_gsttopcontent_pi1 = USER
+plugin.tx_gsttopcontent_pi1 {
+
+// Set the general configuration parameters.
+  templateFile = {$plugin.gsttopcontent.templateFile}
+  startPid = {$plugin.gsttopcontent.startPid}
+  excludePids = {$plugin.gsttopcontent.excludePids}
+  excludePidsR = {$plugin.gsttopcontent.excludePidsR}
+  maxRecs = {$plugin.gsttopcontent.maxRecs}
+  ppRecs = {$plugin.gsttopcontent.ppRecs}
+  offsetRecs = {$plugin.gsttopcontent.offsetRecs}
+  allowedDokTypes = {$plugin.gsttopcontent.allowedDokTypes}
+  maxTextLength = {$plugin.gsttopcontent.maxTextLength}
+  andGotoNext = {$plugin.gsttopcontent.andGotoNext}
+  showTextEnd = {$plugin.gsttopcontent.showTextEnd}
+  showRecImg = {$plugin.gsttopcontent.showRecImg}
+  imgTagAdd = {$plugin.gsttopcontent.imgTagAdd}
+  linkPageTitle = {$plugin.gsttopcontent.linkPageTitle}
+  linkTarget = {$plugin.gsttopcontent.linkTarget}
+  ATagParams = {$plugin.gsttopcontent.ATagParams}
+  useTeaserAndBodytext = {$plugin.gsttopcontent.useTeaserAndBodytext}
+  onlyOnePerPage = {$plugin.gsttopcontent.onlyOnePerPage}
+
+// Set the sql configuration parameters.
+  sqlOrderBy = {$plugin.gsttopcontent.sqlOrderBy}
+  sqlTstampField = {$plugin.gsttopcontent.sqlTstampField}
+  sqlTeaserField = {$plugin.gsttopcontent.sqlTeaserField}
+  sqlAndWhere = {$plugin.gsttopcontent.sqlAndWhere}
+
+// Set the format configuration parameters.
+  classTable = {$plugin.gsttopcontent.classTable}
+  classTdTstamp = {$plugin.gsttopcontent.classTdTstamp}
+  classTdHeader = {$plugin.gsttopcontent.classTdHeader}
+  classTdLink = {$plugin.gsttopcontent.classTdLink}
+  classTdBodytext = {$plugin.gsttopcontent.classTdBodytext}
+  classTdBrowse = {$plugin.gsttopcontent.classTdBrowse}
+
+// Set the standard wrap parameters.
+  tstamp_stdWrap {
+    } // end tstamp_stdWrap 
+
+  pagetitle_stdWrap {
+    innerWrap = <b>|</b>
+    } // end pagetitle_stdWrap 
+
+  header_stdWrap {
+    innerWrap = <b>|</b>
+    } // end header_stdWrap 
+
+  teaser_stdWrap {
+    innerWrap = <p>|</p>
+    } // end teaser_stdWrap 
+
+  link_stdWrap {
+    } // end link_stdWrap
+
+/* -disabled by default-
+// Change local language variables.
+  _LOCAL_LANG.default.dateFormat = %A, %m-%d-%Y
+  _LOCAL_LANG.de.dateFormat = %A, %d.%m.%Y
+  _LOCAL_LANG.fr.dateFormat = %A, %d/%m/%Y
+*/
+
+  } // end plugin.tx_gsttopcontent_pi1
