@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-12T10:07:56Z" product-name="gst_topcontent">
+		<header/>
+		<body>
+			<trans-unit id="dateFormat" xml:space="preserve">
+				<source>%A, %m-%d-%Y</source>
+				<target>%A, %d.%m.%Y</target>
+			</trans-unit>
+			<trans-unit id="showRecText" xml:space="preserve">
+				<source>[more]</source>
+				<target>[mehr]</target>
+			</trans-unit>
+			<trans-unit id="msgNoRecords" xml:space="preserve">
+				<source>Unfortunately no records were found!</source>
+				<target>Leider konnte kein Datensatz gefunden werden!</target>
+			</trans-unit>
+			<trans-unit id="msgNoPageTitle" xml:space="preserve">
+				<source>[No Pagetitle]</source>
+				<target>[Kein Seitentitel]</target>
+			</trans-unit>
+			<trans-unit id="msgNoTitle" xml:space="preserve">
+				<source>[No Title]</source>
+				<target>[Kein Titel]</target>
+			</trans-unit>
+			<trans-unit id="msgNoBodytext" xml:space="preserve">
+				<source>[No Text]</source>
+				<target>[Kein Text]</target>
+			</trans-unit>
+			<trans-unit id="browsePage" xml:space="preserve">
+				<source>Page </source>
+				<target>Seite </target>
+			</trans-unit>
+			<trans-unit id="browseSeperator" xml:space="preserve">
+				<source> - </source>
+				<target> - </target>
+			</trans-unit>
+			<trans-unit id="browseActPageWrap" xml:space="preserve">
+				<source><![CDATA[
+					>>|<<
+				]]></source>
+				<target><![CDATA[
+					>>|<<
+				]]></target>
+			</trans-unit>
+			<trans-unit id="browseFromTo" xml:space="preserve">
+				<source>Results ###FROM### to ###TO### out of ###COUNT###</source>
+				<target>Ergebnisse ###FROM### bis ###TO### von ###COUNT###</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

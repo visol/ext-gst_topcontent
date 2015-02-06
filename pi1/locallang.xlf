@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-12T10:07:56Z" product-name="gst_topcontent">
+		<header/>
+		<body>
+			<trans-unit id="dateFormat" xml:space="preserve">
+				<source>%A, %m-%d-%Y</source>
+			</trans-unit>
+			<trans-unit id="showRecText" xml:space="preserve">
+				<source>[more]</source>
+			</trans-unit>
+			<trans-unit id="msgNoRecords" xml:space="preserve">
+				<source>Unfortunately no records were found!</source>
+			</trans-unit>
+			<trans-unit id="msgNoPageTitle" xml:space="preserve">
+				<source>[No Pagetitle]</source>
+			</trans-unit>
+			<trans-unit id="msgNoTitle" xml:space="preserve">
+				<source>[No Title]</source>
+			</trans-unit>
+			<trans-unit id="msgNoBodytext" xml:space="preserve">
+				<source>[No Text]</source>
+			</trans-unit>
+			<trans-unit id="browsePage" xml:space="preserve">
+				<source>Page </source>
+			</trans-unit>
+			<trans-unit id="browseSeperator" xml:space="preserve">
+				<source> - </source>
+			</trans-unit>
+			<trans-unit id="browseActPageWrap" xml:space="preserve">
+				<source><![CDATA[
+					>>|<<
+				]]></source>
+			</trans-unit>
+			<trans-unit id="browseFromTo" xml:space="preserve">
+				<source>Results ###FROM### to ###TO### out of ###COUNT###</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

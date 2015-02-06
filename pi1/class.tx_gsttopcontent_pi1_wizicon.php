@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *  
-*  (c) 2003 Dr. Pascal Grüttner (gruettner@gst-im.de)
+*  (c) 2003 Dr. Pascal Grï¿½ttner (gruettner@gst-im.de)
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is 
@@ -24,36 +24,38 @@
 /** 
  * Class that adds the wizard icon.
  *
- * @author	Dr. Pascal Grüttner <gruettner@gst-im.de>
+ * @author	Dr. Pascal GrÃ¼ttner <gruettner@gst-im.de>
  */
 
 
 
 class tx_gsttopcontent_pi1_wizicon {
-	function proc($wizardItems)	{
-		global $LANG;
 
-		$LL = $this->includeLocalLang();
+	/**
+	 * Path to locallang file (with : as postfix)
+	 *
+	 * @var string
+	 */
+	protected $locallangPath = 'LLL:EXT:gst_topcontent/Resources/Private/Language/locallang_mod.xlf:';
 
-		$wizardItems["plugins_tx_gsttopcontent_pi1"] = array(
-			"icon"=>t3lib_extMgm::extRelPath("gst_topcontent")."pi1/ce_wiz.gif",
-			"title"=>$LANG->getLLL("pi1_title",$LL),
-			"description"=>$LANG->getLLL("pi1_plus_wiz_description",$LL),
-			"params"=>"&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=gst_topcontent_pi1"
+	/**
+	 * Processing the wizard items array
+	 *
+	 * @param array $wizardItems
+	 * @return array
+	 */
+	public function proc($wizardItems = array()) {
+		$wizardItems['plugins_tx_powermail_pi1'] = array(
+			'icon' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('gst_topcontent') . 'pi1/ce_wiz.gif',
+			'title' => $GLOBALS['LANG']->sL($this->locallangPath . 'pi1_title', TRUE),
+			'description' => $GLOBALS['LANG']->sL($this->locallangPath . 'pi1_plus_wiz_description', TRUE),
+			'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=gst_topcontent_pi1'
 		);
 
 		return $wizardItems;
 	}
-	function includeLocalLang()	{
-		include(t3lib_extMgm::extPath("gst_topcontent")."locallang.php");
-		return $LOCAL_LANG;
-	}
 }
 
 
-
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/gst_topcontent/pi1/class.tx_gsttopcontent_pi1_wizicon.php"])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/gst_topcontent/pi1/class.tx_gsttopcontent_pi1_wizicon.php"]);
-}
 
 ?>

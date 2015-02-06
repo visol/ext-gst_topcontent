@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-12T10:07:53Z" product-name="gst_topcontent">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.list_type" xml:space="preserve">
+				<source>
+                
+            </source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_gsttopcontent_abstract" xml:space="preserve">
+				<source>
+                
+            </source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
