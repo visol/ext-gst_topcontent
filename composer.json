@@ -1,0 +1,7 @@
+{
+  "name": "visol/gst-topcontent",
+  "type": "typo3-cms-extension",
+  "description": "Display (teaser) of the most actual records from tt_content including a link to the original content element.",
+  "homepage": "https://github.com/visol/ext-gst_topcontent",
+  "license": ["GPL-2.0+"]
+}
